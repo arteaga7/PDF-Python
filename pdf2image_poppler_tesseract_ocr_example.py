@@ -8,7 +8,7 @@ Version:        1.0
 Description:
 Text is obtained from a PDF file by using the pdf2image (with poppler) libraries and tesseract_ocr.
 The PDF file can contain flat text and pictures, RECOMMENDED FOR SCANNED PDFs.
-All text is saved in "output_text".
+All text is saved in "output_txt".
 Dependencies:   pdf2image==1.17.0, pytesseract==0.3.13, pillow==12.0.0, numpy==2.2.6,
 'poppler-25.07.0' and 'tesseract_ocr' installed.
 """
