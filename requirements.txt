@@ -1,0 +1,10 @@
+pandas
+openpyxl
+numpy
+fitz
+matplotlib
+pdf2image
+PyMuPDF
+pytesseract
+opencv-python
+easyocr
