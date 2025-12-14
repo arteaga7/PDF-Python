@@ -1,4 +1,4 @@
-# PDF-Python
+# PDF-OCR-Python
 This repository contains some scripts using Python libraries to process PDF files and images.
 
 ## 🚀 How to run locally
