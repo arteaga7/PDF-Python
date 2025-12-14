@@ -21,7 +21,9 @@ python -m venv env && source env/bin/activate && pip install -r requirements.txt
 3. Run any Python script.
 
 ## 📦 Make any Python script executable
-In order to make 'ocr_executable_windows.py' executable (for Windows):
+**For Windows**
+
+In order to make 'ocr_executable_windows.py' executable:
 1. Copy the content of 'C:/poppler/Library' in the folder './poppler'.
 2. Copy content of (hidden folder) 'C:/Users/youruser/.EasyOCR/model' in './easyOCR'.
 3. Copy the content of 'C:/Program Files/Tesseract-OCR' in './tesseract'.
@@ -52,7 +54,9 @@ pyinstaller --onefile --add-data "poppler/bin;poppler/bin" --add-data "easyOCR;e
 ```
 6. Paste/move folder './data', which contains the PDF files, in the same path of your executable.exe created in './dist'.
 
-In order to make 'ocr_executable_linux.py' executable (for Linux):
+**For Linux**
+
+In order to make 'ocr_executable_linux.py' executable:
 1. Tesseract and Poppler are expected to be installed on the system, else run:
 ```
 sudo apt-get install tesseract-ocr tesseract-ocr-spa tesseract-ocr-eng
@@ -63,6 +67,6 @@ sudo apt-get install poppler-utils
 2. Copy content of (hidden folder) '~/.EasyOCR/model' in './easyOCR'.
 3. Run:
 ```
-pyinstaller --onefile --add-data "easyOCR;easyOCR" --add-data "data;data" ocr_executable_linux.py
+pyinstaller --onefile --add-data "easyOCR:easyOCR" --add-data "data:data" ocr_executable_linux.py
 ```
 Finally, your executable is created in './dist'.
